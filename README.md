@@ -1,39 +1,54 @@
-# A New Dynamical Classification of SPARC Galaxies: Data Products
+# A Morphological Classification of Galactic Rotation Curves: Data Products
 
-This repository contains the primary data products associated with the forthcoming paper by Vakhtang Mchedlishvili, which introduces a new morphological classification of 175 galaxies from the SPARC database.
+**Author:** Vakhtang Mchedlishvili  
+**Contact:** v.mchedl74@gmail.com  
+**Paper Status:** Submitted / Preprint available
 
-The classification is based on the detailed analysis of the galaxies' dynamical signatures, as revealed by their rotation curves. The goal of this repository is to provide the full set of results for independent review and use by the scientific community.
+## Overview
+
+This repository contains the primary data products associated with the research paper **"A Morphological Classification of Galactic Rotation Curves: Evidence for a Universal Evolutionary Sequence"**.
+
+The study analyzes 175 galaxies from the **SPARC database**, introducing a new dynamical classification scheme based on the detailed morphology of rotation curves. The goal of this repository is to provide the full set of results for independent review and use by the scientific community.
 
 ## Repository Contents
 
-This repository contains two main data products:
+### 1. The Classification Catalog (`/data`)
 
-### 1. The Complete Graphical Atlas (`/Plots_Atlas`)
+The file `SPARC_Morphological_Catalog.csv` contains the final classification and physical parameters for all 175 galaxies.
 
-The `/Plots_Atlas` folder contains the full graphical atlas of 175 unified rotation curve plots. 
+**Column Description:**
+*   **No:** Index number.
+*   **Galaxy:** The standard SPARC identifier (Galaxy Name).
+*   **Alpha (deg):** The initial rising slope angle ($\alpha$) measured against a unified scale.
+*   **Class:** The dynamical class assigned in this work (I, II, or III).
+*   **log M_star (M_sun):** Stellar Mass in logarithmic solar units.
+*   **log SFR (M_sun/yr):** Star Formation Rate.
+*   **log sSFR (yr^-1):** Specific Star Formation Rate.
+*   **Source:** Original data source reference (e.g., Lelli+16, Leroy+22).
 
-*   **Standardization:** Each plot is presented on a unified coordinate system (`0-85 kpc` vs. `0-450 km/s`) with a fixed aspect ratio to allow for direct visual comparison of different galaxies.
+### 2. The Complete Graphical Atlas (`/atlas`)
+
+The `/atlas` folder contains the full graphical atlas of 175 unified rotation curve plots.
+
+*   **Standardization:** Each plot is presented on a unified coordinate system to allow for direct visual comparison.
+*   **Benchmark:** A 45° benchmark slope (corresponding to a physical gradient of 10 km/s/kpc) is included on each plot for reference.
 *   **Classification:** Each plot title includes the galaxy's name and its assigned dynamical class.
-*   **Benchmark:** A 45° benchmark slope (corresponding to a physical gradient of 10 (km/s)/kpc) is included on each plot for reference.
 
-### 2. The Classification Catalog (`classification_catalog.csv`)
+## The Classification Scheme
 
-This CSV file contains the final classification for all 175 galaxies. The table includes the following columns:
+The classification is based on a visual and quantitative analysis of the rotation curves (specifically the initial slope angle $\alpha$), identifying three primary dynamical classes:
 
-*   `Galaxy_Name`: The standard SPARC identifier for the galaxy.
-*   `Dynamical_Class`: The dynamical class assigned in our work (`Childhood`, `Youth`, or `Old Age`).
-*   `Detailed_Morphology`: The standard, detailed morphological type of the galaxy for reference.
+*   **Class I ("Childhood"):** $\alpha > 75^\circ$. Characterized by high central mass concentration (steep rise) and strong, often complex, oscillatory features across the disk. Represents high-tension systems.
+*   **Class II ("Youth"):** $45^\circ < \alpha \leq 75^\circ$. Characterized by a stabilized core (moderate rise) and clear, regular, periodic oscillatory features ("memory waves") in the outer disk.
+*   **Class III ("Old Age"):** $\alpha \leq 45^\circ$. Characterized by low central mass concentration (shallow rise) and a very smooth profile with minimal to no oscillatory features. Represents dynamically relaxed and expanded systems.
 
-## The Classification Scheme (Brief Overview)
-
-The classification is based on a visual and quantitative analysis of the rotation curves, identifying three primary dynamical classes that we propose correspond to different evolutionary stages:
-
-1.  **Class 1: Childhood:** Characterized by high central mass concentration (a steep initial rise, typically above the 45° benchmark) and strong, often complex, oscillatory features across the disk.
-2.  **Class 2: Youth:** Characterized by a stabilized core (a less steep rise) but with clear, regular, periodic oscillatory features ("memory waves") in the outer disk.
-3.  **Class 3: Old Age:** Characterized by low central mass concentration (a shallow rise, typically below the 45° benchmark) and a very smooth profile with minimal to no oscillatory features.
-
-A full description of the methodology and the physical interpretation of these classes is provided in the main paper (Mchedlishvili, in prep.).
+A full description of the methodology and the physical interpretation of these classes is provided in the main paper.
 
 ## Usage and Citation
 
-The data and plots in this repository are provided for research and educational purposes. If you use these materials in your scientific publications, please cite the associated paper. The original SPARC data can be accessed at [http://astroweb.cwru.edu/SPARC/](http://astroweb.cwru.edu/SPARC/).
+The data and plots in this repository are provided for research and educational purposes. If you use these materials in your scientific publications, please cite the associated paper:
+
+> Mchedlishvili, V. (2025). *A Morphological Classification of Galactic Rotation Curves: Evidence for a Universal Evolutionary Sequence*.
+
+## Acknowledgments
+This work utilizes data from the **SPARC (Spitzer Photometry and Accurate Rotation Curves)** database. We acknowledge Federico Lelli, Stacy McGaugh, and James Schombert for making this resource publicly available. The original SPARC data can be accessed at [http://astroweb.cwru.edu/SPARC/](http://astroweb.cwru.edu/SPARC/).
