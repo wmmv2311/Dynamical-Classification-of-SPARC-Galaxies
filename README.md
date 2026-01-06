@@ -1,4 +1,3 @@
-markdown
 # A Morphological Classification of Galactic Rotation Curves: Data Products
 
 **Author:** Vakhtang Mchedlishvili  
